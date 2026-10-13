@@ -1,0 +1,14 @@
+name: ServerExtras
+version: 1.0.0
+main: dev.mcserver.extras.ServerExtrasPlugin
+api-version: "26.2"
+description: Eigene Rezepte (unsichtbarer Item-Rahmen, Lichtquelle) und Bilder per Weblink auf Maps
+commands:
+  mapimage:
+    description: Wandelt leere Maps in Karten mit einem Bild aus dem Internet um
+    usage: /mapimage <Bild-URL> [Spalten x Zeilen] [fit|fill|stretch]
+    permission: mapimage.use
+permissions:
+  mapimage.use:
+    description: Erlaubt /mapimage
+    default: op

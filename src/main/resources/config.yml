@@ -1,0 +1,42 @@
+# CustomRecipes
+# Aenderungen an den Rezepten wirken nach einem Server-Neustart.
+
+# Rezepte beim Beitritt automatisch im Rezeptbuch freischalten
+discover-on-join: true
+
+# Unsichtbarer Item-Rahmen: Item-Rahmen in der Mitte, Glasscheiben drumherum
+invisible-item-frame:
+  enabled: true
+  amount: 1
+
+# Lichtquellen-Block (Light Block): Fackel in der Mitte, Glasscheiben drumherum
+light-block:
+  enabled: true
+  amount: 1
+  # Helligkeit des Blocks (0-15)
+  level: 15
+  # Beim Abbau im Survival wird der Block wieder als Item gedroppt
+  drop-on-break: true
+
+# ================= MapImage =================
+# Maximale Rastergroesse (Spalten und Zeilen), z. B. 5 = bis zu 5x5 Maps
+max-grid: 5
+
+# Maximale Downloadgroesse in MB
+max-download-mb: 8
+
+# Maximale Bildgroesse in Pixeln (Breite x Hoehe), schuetzt vor Speicherproblemen
+max-image-pixels: 25000000
+
+# Zeitlimit fuer den Download in Sekunden
+timeout-seconds: 15
+
+# Wenn nicht leer: nur diese Hosts (inkl. Subdomains) sind erlaubt, z. B. [i.imgur.com, cdn.discordapp.com]
+allowed-hosts: []
+
+# Adressen im lokalen Netzwerk / localhost erlauben (nicht empfohlen, Sicherheitsrisiko)
+allow-private-addresses: false
+
+# Standard-Modus: fit = ganzes Bild mit schwarzen Raendern, fill = Bereich ausfuellen (Rand wird abgeschnitten),
+# stretch = verzerrt auf die ganze Flaeche
+default-mode: fit
